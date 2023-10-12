@@ -70,10 +70,10 @@ public:
         }
         while(current !=NULL) {
             if (current->BookName == bookName) {
-                cout << current->BookName << " ";
-                cout << current->WriterName << " ";
-                cout << current->ID << " ";
-                cout << current->Price << " ";
+                cout<<"The Book Name: " << current->BookName << "\n";
+                cout <<"The Writer Name: "<< current->WriterName << "\n";
+                cout<<"The Book ID: " << current->ID <<"\n";
+                cout<<"The Book Price: " << current->Price << "\n";
                 break;
             }
             else{
@@ -125,7 +125,7 @@ public:
         Book *current = First;
         while (current != NULL) {
             if (current->BookName == name) {
-                cout<<"Found,If you want to know more information about the book enter 2\n";
+                cout<<"Found, If you want to know more information about the book enter 2\n";
                 flag=1;
                 break;
             } else {
