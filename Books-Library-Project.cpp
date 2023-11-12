@@ -52,10 +52,10 @@ public:
             Last = newBook;
         }
     }
-    void Display(){
+    void display(){
         Book* current = First;
         if(current==NULL){
-            cout<<"there is no elements to display\n";
+            cout<<"there are no elements to display\n";
         }
         while(current !=NULL){
             cout<< current->BookName<<" ";
@@ -63,7 +63,7 @@ public:
             current = current->Next;
         }
     }
-    void DisplayForDetails(string bookName){
+    void displayForDetails(string bookName){
         Book* current = First;
         if(current==NULL){
             cout<<"there is no Book with this name\n";
@@ -120,7 +120,7 @@ public:
             newBook->Next->Prev = newBook;
         }
     }
-    void SearchForAbook(string name) {
+    void searchForAbook(string name) {
         int flag=0;
         Book *current = First;
         while (current != NULL) {
